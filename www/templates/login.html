@@ -1,0 +1,12 @@
+<div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="User Name" ng-model="formData.name">
+  </label>
+  <label class="item item-input" ng-if="!(formData.authwithFingerPrint)" >
+    <input type="password" placeholder="Password" ng-model="formData.password">
+  </label>
+  <ion-checkbox ng-model="formData.authwithFingerPrint" ng-click="onChange()">Authenitcate with Finger Print</ion-checkbox>
+  <button class="button button-royal button-block" ng-click="submit()">
+    Login
+  </button>
+</div>
